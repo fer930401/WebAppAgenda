@@ -103,6 +103,7 @@
         }
         function afterRender(isCallBack) {
             dpn.visibleRangeChangedCallBack();
+//nueva linea
         }
     </script>
     
