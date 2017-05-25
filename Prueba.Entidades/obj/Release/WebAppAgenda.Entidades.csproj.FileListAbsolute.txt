@@ -1,0 +1,7 @@
+C:\Users\fernando.garcia\Documents\Proyectos Skytex\WebAppAgenda\Prueba.Entidades\bin\Release\Prueba.Entidades.dll.config
+C:\Users\fernando.garcia\Documents\Proyectos Skytex\WebAppAgenda\Prueba.Entidades\bin\Release\Prueba.Entidades.dll
+C:\Users\fernando.garcia\Documents\Proyectos Skytex\WebAppAgenda\Prueba.Entidades\bin\Release\Prueba.Entidades.pdb
+C:\Users\fernando.garcia\Documents\Proyectos Skytex\WebAppAgenda\Prueba.Entidades\bin\Release\EntityFramework.dll
+C:\Users\fernando.garcia\Documents\Proyectos Skytex\WebAppAgenda\Prueba.Entidades\bin\Release\EntityFramework.xml
+C:\Users\fernando.garcia\Documents\Proyectos Skytex\WebAppAgenda\Prueba.Entidades\obj\Release\Prueba.Entidades.dll
+C:\Users\fernando.garcia\Documents\Proyectos Skytex\WebAppAgenda\Prueba.Entidades\obj\Release\Prueba.Entidades.pdb

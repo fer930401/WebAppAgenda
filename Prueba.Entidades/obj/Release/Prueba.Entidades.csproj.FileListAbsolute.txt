@@ -1,0 +1,15 @@
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Entidades\bin\Release\Prueba.Entidades.dll.config
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Entidades\bin\Release\Prueba.Entidades.dll
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Entidades\bin\Release\Prueba.Entidades.pdb
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Entidades\bin\Release\EntityFramework.dll
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Entidades\bin\Release\EntityFramework.xml
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Entidades\obj\Release\Prueba.Entidades.dll
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Entidades\obj\Release\Prueba.Entidades.pdb
+C:\Users\fernando.garcia\Documents\Proyectos Skytex\AplicacionWeb\Prueba.Entidades\bin\Release\Prueba.Entidades.dll.config
+C:\Users\fernando.garcia\Documents\Proyectos Skytex\AplicacionWeb\Prueba.Entidades\bin\Release\Prueba.Entidades.dll
+C:\Users\fernando.garcia\Documents\Proyectos Skytex\AplicacionWeb\Prueba.Entidades\bin\Release\Prueba.Entidades.pdb
+C:\Users\fernando.garcia\Documents\Proyectos Skytex\AplicacionWeb\Prueba.Entidades\bin\Release\EntityFramework.dll
+C:\Users\fernando.garcia\Documents\Proyectos Skytex\AplicacionWeb\Prueba.Entidades\bin\Release\EntityFramework.xml
+C:\Users\fernando.garcia\Documents\Proyectos Skytex\AplicacionWeb\Prueba.Entidades\obj\Release\Prueba.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\fernando.garcia\Documents\Proyectos Skytex\AplicacionWeb\Prueba.Entidades\obj\Release\Prueba.Entidades.dll
+C:\Users\fernando.garcia\Documents\Proyectos Skytex\AplicacionWeb\Prueba.Entidades\obj\Release\Prueba.Entidades.pdb
