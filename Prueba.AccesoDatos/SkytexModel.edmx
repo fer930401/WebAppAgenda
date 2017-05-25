@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="skytexModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="xcdconapl_cl">
+          <Key>
+            <PropertyRef Name="tipdoc_cve" />
+            <PropertyRef Name="sp_cve" />
+            <PropertyRef Name="num_reng" />
+            <PropertyRef Name="spd_cve" />
+          </Key>
+          <Property Name="tipdoc_cve" Type="nchar" MaxLength="6" Nullable="false" />
+          <Property Name="sp_cve" Type="nvarchar" MaxLength="25" Nullable="false" />
+          <Property Name="num_reng" Type="smallint" Nullable="false" />
+          <Property Name="spd_cve" Type="nvarchar" MaxLength="25" Nullable="false" />
+          <Property Name="prm1" Type="nchar" MaxLength="6" />
+          <Property Name="prm2" Type="nchar" MaxLength="6" />
+          <Property Name="prm3" Type="nchar" MaxLength="6" />
+          <Property Name="prm4" Type="nchar" MaxLength="6" />
+          <Property Name="prm5" Type="nchar" MaxLength="6" />
+          <Property Name="prm6" Type="nvarchar" MaxLength="25" />
+          <Property Name="prm7" Type="nvarchar" MaxLength="255" />
+          <Property Name="prm8" Type="nvarchar" MaxLength="255" />
+          <Property Name="prm9" Type="nvarchar" MaxLength="255" />
+          <Property Name="prm10" Type="nvarchar" MaxLength="255" />
+          <Property Name="prm11" Type="nchar" MaxLength="6" />
+          <Property Name="prm12" Type="nchar" MaxLength="3" />
+          <Property Name="prm13" Type="nvarchar" MaxLength="255" />
+          <Property Name="prm14" Type="smallint" />
+          <Property Name="prm15" Type="money" />
+          <Property Name="prm16" Type="nchar" MaxLength="6" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'skytex.dbo.xcTmpAgen' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="xcTmpAgen">
+          <Key>
+            <PropertyRef Name="num_fol" />
+          </Key>
+          <Property Name="ef_cve" Type="nchar" MaxLength="3" />
+          <Property Name="tipo_doc" Type="nchar" MaxLength="6" />
+          <Property Name="num_fol" Type="int" Nullable="false" />
+          <Property Name="articulos" Type="nvarchar" MaxLength="255" />
+          <Property Name="art_cve" Type="nvarchar" MaxLength="13" />
+          <Property Name="fec_mov_ttant" Type="datetime" />
+          <Property Name="status_orden" Type="smallint" />
+          <Property Name="status_entrega" Type="nvarchar" MaxLength="255" />
+          <Property Name="uns_vta" Type="float" />
+          <Property Name="uni_med" Type="nvarchar" MaxLength="255" />
+          <Property Name="precio_vta" Type="float" />
+          <Property Name="calculo" Type="nvarchar" MaxLength="255" />
+          <Property Name="num_reng" Type="nvarchar" MaxLength="50" />
+          <Property Name="reng" Type="nvarchar" MaxLength="3" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'skytex.dbo.xtPlaneacion' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="xtPlaneacion">
+          <Key>
+            <PropertyRef Name="fec_ini" />
+            <PropertyRef Name="fec_fin" />
+            <PropertyRef Name="id_maquina" />
+            <PropertyRef Name="id_batch" />
+            <PropertyRef Name="accion" />
+            <PropertyRef Name="opcion" />
+          </Key>
+          <Property Name="fec_ini" Type="datetime" Nullable="false" />
+          <Property Name="fec_fin" Type="datetime" Nullable="false" />
+          <Property Name="fec_ins" Type="datetime" />
+          <Property Name="id_maquina" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="id_batch" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="nom_bact" Type="nvarchar" MaxLength="120" />
+          <Property Name="status_proceso" Type="smallint" />
+          <Property Name="fol_dispo" Type="int" />
+          <Property Name="doc_dispo" Type="nchar" MaxLength="6" />
+          <Property Name="ef_cve" Type="nchar" MaxLength="3" />
+          <Property Name="accion" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="opcion" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="user_cve" Type="nchar" MaxLength="3" />
+          <Property Name="num_reng" Type="smallint" />
+        </EntityType>
+        <Function Name="Eventos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ef_cve" Type="nchar" Mode="In" />
+          <Parameter Name="tipdoc_cve" Type="nchar" Mode="In" />
+          <Parameter Name="status_proceso" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="sp_AgendaListaEventos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ef_cve" Type="nchar" Mode="In" />
+          <Parameter Name="tipdoc_cve" Type="nchar" Mode="In" />
+          <Parameter Name="status_proceso" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="sp_llenaAgenda" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_WebAppActAgenda" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ef_cve" Type="nchar" Mode="In" />
+          <Parameter Name="doc_generar" Type="nchar" Mode="In" />
+          <Parameter Name="opcion" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_WebAppAgenActInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ef_cve" Type="nchar" Mode="In" />
+          <Parameter Name="fec_ini" Type="datetime" Mode="In" />
+          <Parameter Name="fec_fin" Type="datetime" Mode="In" />
+          <Parameter Name="id_maq" Type="nvarchar" Mode="In" />
+          <Parameter Name="id_bacth" Type="nvarchar" Mode="In" />
+          <Parameter Name="nom_batch" Type="nvarchar" Mode="In" />
+          <Parameter Name="doc_generar" Type="nchar" Mode="In" />
+          <Parameter Name="accion" Type="nvarchar" Mode="In" />
+          <Parameter Name="opcion" Type="nvarchar" Mode="In" />
+          <Parameter Name="user_cve" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="sp_WebAppAgMuestaEv1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_WebAppInsInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ef_cve" Type="nchar" Mode="In" />
+          <Parameter Name="fec_ini" Type="datetime" Mode="In" />
+          <Parameter Name="fec_fin" Type="datetime" Mode="In" />
+          <Parameter Name="id_maq" Type="nvarchar" Mode="In" />
+          <Parameter Name="id_bacth" Type="nvarchar" Mode="In" />
+          <Parameter Name="nom_batch" Type="nvarchar" Mode="In" />
+          <Parameter Name="doc_generar" Type="nchar" Mode="In" />
+          <Parameter Name="accion" Type="nvarchar" Mode="In" />
+          <Parameter Name="opcion" Type="nvarchar" Mode="In" />
+          <Parameter Name="user_cve" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="sp_WebAppLlenaLista" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_WebAppLlenaPlaneacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="status_proceso" Type="smallint" Mode="In" />
+          <Parameter Name="opcion" Type="nvarchar" Mode="In" />
+          <Parameter Name="user_cve" Type="nchar" Mode="In" />
+          <Parameter Name="ef_cve" Type="nchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="skytexModelStoreContainer">
+          <EntitySet Name="xcdconapl_cl" EntityType="Self.xcdconapl_cl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="xcTmpAgen" EntityType="Self.xcTmpAgen" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[xcTmpAgen].[ef_cve] AS [ef_cve], 
+[xcTmpAgen].[tipo_doc] AS [tipo_doc], 
+[xcTmpAgen].[num_fol] AS [num_fol], 
+[xcTmpAgen].[articulos] AS [articulos], 
+[xcTmpAgen].[art_cve] AS [art_cve], 
+[xcTmpAgen].[fec_mov_ttant] AS [fec_mov_ttant], 
+[xcTmpAgen].[status_orden] AS [status_orden], 
+[xcTmpAgen].[status_entrega] AS [status_entrega], 
+[xcTmpAgen].[uns_vta] AS [uns_vta], 
+[xcTmpAgen].[uni_med] AS [uni_med], 
+[xcTmpAgen].[precio_vta] AS [precio_vta], 
+[xcTmpAgen].[calculo] AS [calculo], 
+[xcTmpAgen].[num_reng] AS [num_reng], 
+[xcTmpAgen].[reng] AS [reng]
+FROM [dbo].[xcTmpAgen] AS [xcTmpAgen]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="xtPlaneacion" EntityType="Self.xtPlaneacion" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[xtPlaneacion].[fec_ini] AS [fec_ini], 
+[xtPlaneacion].[fec_fin] AS [fec_fin], 
+[xtPlaneacion].[fec_ins] AS [fec_ins], 
+[xtPlaneacion].[id_maquina] AS [id_maquina], 
+[xtPlaneacion].[id_batch] AS [id_batch], 
+[xtPlaneacion].[nom_bact] AS [nom_bact], 
+[xtPlaneacion].[status_proceso] AS [status_proceso], 
+[xtPlaneacion].[fol_dispo] AS [fol_dispo], 
+[xtPlaneacion].[doc_dispo] AS [doc_dispo], 
+[xtPlaneacion].[ef_cve] AS [ef_cve], 
+[xtPlaneacion].[accion] AS [accion], 
+[xtPlaneacion].[opcion] AS [opcion], 
+[xtPlaneacion].[user_cve] AS [user_cve], 
+[xtPlaneacion].[num_reng] AS [num_reng]
+FROM [dbo].[xtPlaneacion] AS [xtPlaneacion]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="skytexModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="xcdconapl_cl">
+          <Key>
+            <PropertyRef Name="tipdoc_cve" />
+            <PropertyRef Name="sp_cve" />
+            <PropertyRef Name="num_reng" />
+            <PropertyRef Name="spd_cve" />
+          </Key>
+          <Property Name="tipdoc_cve" Type="String" MaxLength="6" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="sp_cve" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="num_reng" Type="Int16" Nullable="false" />
+          <Property Name="spd_cve" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="prm1" Type="String" MaxLength="6" FixedLength="true" Unicode="true" />
+          <Property Name="prm2" Type="String" MaxLength="6" FixedLength="true" Unicode="true" />
+          <Property Name="prm3" Type="String" MaxLength="6" FixedLength="true" Unicode="true" />
+          <Property Name="prm4" Type="String" MaxLength="6" FixedLength="true" Unicode="true" />
+          <Property Name="prm5" Type="String" MaxLength="6" FixedLength="true" Unicode="true" />
+          <Property Name="prm6" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="prm7" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="prm8" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="prm9" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="prm10" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="prm11" Type="String" MaxLength="6" FixedLength="true" Unicode="true" />
+          <Property Name="prm12" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
+          <Property Name="prm13" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="prm14" Type="Int16" />
+          <Property Name="prm15" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="prm16" Type="String" MaxLength="6" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="skytexEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="xcdconapl_cl" EntityType="Self.xcdconapl_cl" />
+          <EntitySet Name="xtPlaneacion" EntityType="skytexModel.xtPlaneacion" />
+          <FunctionImport Name="sp_ListaEventos" ReturnType="Collection(skytexModel.sp_ListaEventos_Result)">
+            <Parameter Name="ef_cve" Mode="In" Type="String" />
+            <Parameter Name="tipdoc_cve" Mode="In" Type="String" />
+            <Parameter Name="extra" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Eventos" ReturnType="Collection(skytexModel.Eventos_Result)">
+            <Parameter Name="ef_cve" Mode="In" Type="String" />
+            <Parameter Name="tipdoc_cve" Mode="In" Type="String" />
+            <Parameter Name="status_proceso" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_WebAppAgActInfo">
+            <Parameter Name="ef_cve" Mode="In" Type="String" />
+            <Parameter Name="fec_ini" Mode="In" Type="DateTime" />
+            <Parameter Name="fec_fin" Mode="In" Type="DateTime" />
+            <Parameter Name="id_maq" Mode="In" Type="String" />
+            <Parameter Name="id_bacth" Mode="In" Type="String" />
+            <Parameter Name="nom_batch" Mode="In" Type="String" />
+            <Parameter Name="doc_generar" Mode="In" Type="String" />
+            <Parameter Name="accion" Mode="In" Type="String" />
+            <Parameter Name="opcion" Mode="In" Type="String" />
+            <Parameter Name="user_cve" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_WebAppAgenActInfo">
+            <Parameter Name="ef_cve" Mode="In" Type="String" />
+            <Parameter Name="fec_ini" Mode="In" Type="DateTime" />
+            <Parameter Name="fec_fin" Mode="In" Type="DateTime" />
+            <Parameter Name="id_maq" Mode="In" Type="String" />
+            <Parameter Name="id_bacth" Mode="In" Type="String" />
+            <Parameter Name="nom_batch" Mode="In" Type="String" />
+            <Parameter Name="doc_generar" Mode="In" Type="String" />
+            <Parameter Name="accion" Mode="In" Type="String" />
+            <Parameter Name="opcion" Mode="In" Type="String" />
+            <Parameter Name="user_cve" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="xcTmpAgens" EntityType="skytexModel.xcTmpAgen" />
+          <FunctionImport Name="sp_WebAppLlenaLista" ReturnType="Collection(skytexModel.sp_WebAppLlenaLista_Result)" />
+          <FunctionImport Name="sp_llenaAgenda" />
+          <FunctionImport Name="sp_WebAppAgMuestaEv1" ReturnType="Collection(skytexModel.sp_WebAppAgMuestaEv1_Result)" />
+          <FunctionImport Name="sp_WebAppInsInfo" ReturnType="Collection(skytexModel.sp_WebAppInsInfo_Result)">
+            <Parameter Name="ef_cve" Mode="In" Type="String" />
+            <Parameter Name="fec_ini" Mode="In" Type="DateTime" />
+            <Parameter Name="fec_fin" Mode="In" Type="DateTime" />
+            <Parameter Name="id_maq" Mode="In" Type="String" />
+            <Parameter Name="id_bacth" Mode="In" Type="String" />
+            <Parameter Name="nom_batch" Mode="In" Type="String" />
+            <Parameter Name="doc_generar" Mode="In" Type="String" />
+            <Parameter Name="accion" Mode="In" Type="String" />
+            <Parameter Name="opcion" Mode="In" Type="String" />
+            <Parameter Name="user_cve" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_WebAppLlenaPlaneacion" ReturnType="Collection(skytexModel.sp_WebAppLlenaPlaneacion_Result)">
+            <Parameter Name="status_proceso" Mode="In" Type="Int16" />
+            <Parameter Name="opcion" Mode="In" Type="String" />
+            <Parameter Name="user_cve" Mode="In" Type="String" />
+            <Parameter Name="ef_cve" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_AgendaListaEventos" ReturnType="Collection(skytexModel.sp_AgendaListaEventos_Result)">
+            <Parameter Name="ef_cve" Mode="In" Type="String" />
+            <Parameter Name="tipdoc_cve" Mode="In" Type="String" />
+            <Parameter Name="status_proceso" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_WebAppActAgenda" ReturnType="Collection(skytexModel.sp_WebAppActAgenda_Result)">
+            <Parameter Name="ef_cve" Mode="In" Type="String" />
+            <Parameter Name="doc_generar" Mode="In" Type="String" />
+            <Parameter Name="opcion" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="xtPlaneacion">
+          <Key>
+            <PropertyRef Name="fec_ini" />
+            <PropertyRef Name="fec_fin" />
+            <PropertyRef Name="id_maquina" />
+            <PropertyRef Name="id_batch" />
+            <PropertyRef Name="accion" />
+            <PropertyRef Name="opcion" />
+          </Key>
+          <Property Name="fec_ini" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="fec_fin" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="fec_ins" Type="DateTime" Precision="3" />
+          <Property Name="id_maquina" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="id_batch" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="nom_bact" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+          <Property Name="status_proceso" Type="Int16" />
+          <Property Name="fol_dispo" Type="Int32" />
+          <Property Name="doc_dispo" Type="String" MaxLength="6" FixedLength="true" Unicode="true" />
+          <Property Name="ef_cve" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
+          <Property Name="accion" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="opcion" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="user_cve" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
+          <Property Name="num_reng" Type="Int16" />
+        </EntityType>
+        <ComplexType Name="sp_ListaEventos_Result">
+          <Property Type="String" Name="id_batch" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="nom_bact" Nullable="true" MaxLength="120" />
+          <Property Type="DateTime" Name="fec_ini" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="fec_fin" Nullable="false" Precision="23" />
+          <Property Type="String" Name="id_maquina" Nullable="false" MaxLength="20" />
+          <Property Type="Int16" Name="status_proceso" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="Eventos_Result">
+          <Property Type="String" Name="nombre" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="id" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="xcTmpAgen">
+          <Key>
+            <PropertyRef Name="num_fol" />
+          </Key>
+          <Property Name="ef_cve" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
+          <Property Name="tipo_doc" Type="String" MaxLength="6" FixedLength="true" Unicode="true" />
+          <Property Name="num_fol" Type="Int32" Nullable="false" />
+          <Property Name="articulos" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="art_cve" Type="String" MaxLength="13" FixedLength="false" Unicode="true" />
+          <Property Name="fec_mov_ttant" Type="DateTime" Precision="3" />
+          <Property Name="status_orden" Type="Int16" />
+          <Property Name="status_entrega" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="uns_vta" Type="Double" />
+          <Property Name="uni_med" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="precio_vta" Type="Double" />
+          <Property Name="calculo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="num_reng" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="reng" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <ComplexType Name="sp_WebAppLlenaLista_Result">
+          <Property Type="String" Name="ef_cve" Nullable="true" MaxLength="3" />
+          <Property Type="String" Name="tipo_doc" Nullable="true" MaxLength="6" />
+          <Property Type="Int32" Name="num_fol" Nullable="false" />
+          <Property Type="String" Name="articulos" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="art_cve" Nullable="true" MaxLength="13" />
+          <Property Type="DateTime" Name="fec_mov_ttant" Nullable="true" Precision="23" />
+          <Property Type="Int16" Name="status_orden" Nullable="true" />
+          <Property Type="String" Name="status_entrega" Nullable="true" MaxLength="255" />
+        </ComplexType>
+        <ComplexType Name="sp_WebAppAgMuestaEv1_Result">
+          <Property Type="Int32" Name="num_fol" Nullable="false" />
+          <Property Type="String" Name="ef_cve" Nullable="true" MaxLength="3" />
+          <Property Type="String" Name="tipo_doc" Nullable="true" MaxLength="6" />
+          <Property Type="String" Name="articulos" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="status_entrega" Nullable="true" MaxLength="255" />
+          <Property Type="DateTime" Name="fec_mov_ttant" Nullable="true" Precision="23" />
+          <Property Type="String" Name="art_cve" Nullable="true" MaxLength="13" />
+          <Property Type="Int16" Name="status_orden" Nullable="true" />
+          <Property Type="Double" Name="uns_vta" Nullable="true" />
+          <Property Type="String" Name="uni_med" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="calculo" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="reng" Nullable="true" MaxLength="3" />
+        </ComplexType>
+        <ComplexType Name="sp_WebAppInsInfo_Result">
+          <Property Type="Int16" Name="error" Nullable="true" />
+          <Property Type="String" Name="mensaje" Nullable="true" MaxLength="255" />
+        </ComplexType>
+        <ComplexType Name="sp_WebAppLlenaPlaneacion_Result">
+          <Property Type="String" Name="Maquina" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Batch" Nullable="false" MaxLength="20" />
+          <Property Type="DateTime" Name="Fecha_Inicio" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="Fecha_Fin" Nullable="false" Precision="23" />
+          <Property Type="String" Name="Accion" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Opcion" Nullable="false" MaxLength="20" />
+          <Property Type="DateTime" Name="Fecha_Insc" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Nombre_Batch" Nullable="true" MaxLength="120" />
+          <Property Type="Int16" Name="Status" Nullable="true" />
+          <Property Type="Int32" Name="Folio" Nullable="true" />
+          <Property Type="String" Name="Documentos" Nullable="true" MaxLength="6" />
+          <Property Type="String" Name="efClave" Nullable="true" MaxLength="3" />
+          <Property Type="String" Name="User_Clave" Nullable="true" MaxLength="3" />
+          <Property Type="String" Name="Documento" Nullable="false" MaxLength="6" />
+          <Property Type="String" Name="Color" Nullable="true" MaxLength="6" />
+          <Property Type="Int16" Name="Renglon" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_AgendaListaEventos_Result">
+          <Property Type="DateTime" Name="fec_ini" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="fec_fin" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="fec_ins" Nullable="false" Precision="23" />
+          <Property Type="String" Name="id_maquina" Nullable="false" MaxLength="1" />
+          <Property Type="Int32" Name="id_batch" Nullable="true" />
+          <Property Type="String" Name="nom_bact" Nullable="true" MaxLength="1107" />
+          <Property Type="Int16" Name="status_proceso" Nullable="true" />
+          <Property Type="Int32" Name="fol_dispo" Nullable="true" />
+          <Property Type="String" Name="doc_dispo" Nullable="true" MaxLength="6" />
+          <Property Type="String" Name="art_cve" Nullable="true" MaxLength="13" />
+          <Property Type="String" Name="ef_cve" Nullable="true" MaxLength="3" />
+          <Property Type="String" Name="num_reng" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="reng" Nullable="true" MaxLength="3" />
+        </ComplexType>
+        <ComplexType Name="sp_WebAppActAgenda_Result">
+          <Property Type="DateTime" Name="fec_ini" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="fec_fin" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="fec_ins" Nullable="true" Precision="23" />
+          <Property Type="String" Name="id_maquina" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="id_batch" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="nom_bact" Nullable="true" MaxLength="120" />
+          <Property Type="Int16" Name="status_proceso" Nullable="true" />
+          <Property Type="Int32" Name="fol_dispo" Nullable="true" />
+          <Property Type="String" Name="doc_dispo" Nullable="true" MaxLength="6" />
+          <Property Type="String" Name="ef_cve" Nullable="true" MaxLength="3" />
+          <Property Type="String" Name="accion" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="opcion" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="user_cve" Nullable="false" MaxLength="3" />
+          <Property Type="Int16" Name="num_reng" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="skytexModelStoreContainer" CdmEntityContainer="skytexEntities">
+          <EntitySetMapping Name="xcdconapl_cl">
+            <EntityTypeMapping TypeName="skytexModel.xcdconapl_cl">
+              <MappingFragment StoreEntitySet="xcdconapl_cl">
+                <ScalarProperty Name="tipdoc_cve" ColumnName="tipdoc_cve" />
+                <ScalarProperty Name="sp_cve" ColumnName="sp_cve" />
+                <ScalarProperty Name="num_reng" ColumnName="num_reng" />
+                <ScalarProperty Name="spd_cve" ColumnName="spd_cve" />
+                <ScalarProperty Name="prm1" ColumnName="prm1" />
+                <ScalarProperty Name="prm2" ColumnName="prm2" />
+                <ScalarProperty Name="prm3" ColumnName="prm3" />
+                <ScalarProperty Name="prm4" ColumnName="prm4" />
+                <ScalarProperty Name="prm5" ColumnName="prm5" />
+                <ScalarProperty Name="prm6" ColumnName="prm6" />
+                <ScalarProperty Name="prm7" ColumnName="prm7" />
+                <ScalarProperty Name="prm8" ColumnName="prm8" />
+                <ScalarProperty Name="prm9" ColumnName="prm9" />
+                <ScalarProperty Name="prm10" ColumnName="prm10" />
+                <ScalarProperty Name="prm11" ColumnName="prm11" />
+                <ScalarProperty Name="prm12" ColumnName="prm12" />
+                <ScalarProperty Name="prm13" ColumnName="prm13" />
+                <ScalarProperty Name="prm14" ColumnName="prm14" />
+                <ScalarProperty Name="prm15" ColumnName="prm15" />
+                <ScalarProperty Name="prm16" ColumnName="prm16" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="xtPlaneacion">
+            <EntityTypeMapping TypeName="skytexModel.xtPlaneacion">
+              <MappingFragment StoreEntitySet="xtPlaneacion">
+                <ScalarProperty Name="num_reng" ColumnName="num_reng" />
+                <ScalarProperty Name="user_cve" ColumnName="user_cve" />
+                <ScalarProperty Name="opcion" ColumnName="opcion" />
+                <ScalarProperty Name="accion" ColumnName="accion" />
+                <ScalarProperty Name="ef_cve" ColumnName="ef_cve" />
+                <ScalarProperty Name="doc_dispo" ColumnName="doc_dispo" />
+                <ScalarProperty Name="fol_dispo" ColumnName="fol_dispo" />
+                <ScalarProperty Name="status_proceso" ColumnName="status_proceso" />
+                <ScalarProperty Name="nom_bact" ColumnName="nom_bact" />
+                <ScalarProperty Name="id_batch" ColumnName="id_batch" />
+                <ScalarProperty Name="id_maquina" ColumnName="id_maquina" />
+                <ScalarProperty Name="fec_ins" ColumnName="fec_ins" />
+                <ScalarProperty Name="fec_fin" ColumnName="fec_fin" />
+                <ScalarProperty Name="fec_ini" ColumnName="fec_ini" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Eventos" FunctionName="skytexModel.Store.Eventos">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="skytexModel.Eventos_Result">
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_WebAppAgenActInfo" FunctionName="skytexModel.Store.sp_WebAppAgenActInfo" />
+          <EntitySetMapping Name="xcTmpAgens">
+            <EntityTypeMapping TypeName="skytexModel.xcTmpAgen">
+              <MappingFragment StoreEntitySet="xcTmpAgen">
+                <ScalarProperty Name="reng" ColumnName="reng" />
+                <ScalarProperty Name="num_reng" ColumnName="num_reng" />
+                <ScalarProperty Name="calculo" ColumnName="calculo" />
+                <ScalarProperty Name="precio_vta" ColumnName="precio_vta" />
+                <ScalarProperty Name="uni_med" ColumnName="uni_med" />
+                <ScalarProperty Name="uns_vta" ColumnName="uns_vta" />
+                <ScalarProperty Name="status_entrega" ColumnName="status_entrega" />
+                <ScalarProperty Name="status_orden" ColumnName="status_orden" />
+                <ScalarProperty Name="fec_mov_ttant" ColumnName="fec_mov_ttant" />
+                <ScalarProperty Name="art_cve" ColumnName="art_cve" />
+                <ScalarProperty Name="articulos" ColumnName="articulos" />
+                <ScalarProperty Name="num_fol" ColumnName="num_fol" />
+                <ScalarProperty Name="tipo_doc" ColumnName="tipo_doc" />
+                <ScalarProperty Name="ef_cve" ColumnName="ef_cve" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_WebAppLlenaLista" FunctionName="skytexModel.Store.sp_WebAppLlenaLista">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="skytexModel.sp_WebAppLlenaLista_Result">
+                <ScalarProperty Name="ef_cve" ColumnName="ef_cve" />
+                <ScalarProperty Name="tipo_doc" ColumnName="tipo_doc" />
+                <ScalarProperty Name="num_fol" ColumnName="num_fol" />
+                <ScalarProperty Name="articulos" ColumnName="articulos" />
+                <ScalarProperty Name="art_cve" ColumnName="art_cve" />
+                <ScalarProperty Name="fec_mov_ttant" ColumnName="fec_mov_ttant" />
+                <ScalarProperty Name="status_orden" ColumnName="status_orden" />
+                <ScalarProperty Name="status_entrega" ColumnName="status_entrega" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_llenaAgenda" FunctionName="skytexModel.Store.sp_llenaAgenda" />
+          <FunctionImportMapping FunctionImportName="sp_WebAppAgMuestaEv1" FunctionName="skytexModel.Store.sp_WebAppAgMuestaEv1">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="skytexModel.sp_WebAppAgMuestaEv1_Result">
+                <ScalarProperty Name="num_fol" ColumnName="num_fol" />
+                <ScalarProperty Name="ef_cve" ColumnName="ef_cve" />
+                <ScalarProperty Name="tipo_doc" ColumnName="tipo_doc" />
+                <ScalarProperty Name="articulos" ColumnName="articulos" />
+                <ScalarProperty Name="status_entrega" ColumnName="status_entrega" />
+                <ScalarProperty Name="fec_mov_ttant" ColumnName="fec_mov_ttant" />
+                <ScalarProperty Name="art_cve" ColumnName="art_cve" />
+                <ScalarProperty Name="status_orden" ColumnName="status_orden" />
+                <ScalarProperty Name="uns_vta" ColumnName="uns_vta" />
+                <ScalarProperty Name="uni_med" ColumnName="uni_med" />
+                <ScalarProperty Name="calculo" ColumnName="calculo" />
+                <ScalarProperty Name="reng" ColumnName="reng" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_WebAppInsInfo" FunctionName="skytexModel.Store.sp_WebAppInsInfo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="skytexModel.sp_WebAppInsInfo_Result">
+                <ScalarProperty Name="error" ColumnName="error" />
+                <ScalarProperty Name="mensaje" ColumnName="mensaje" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_WebAppLlenaPlaneacion" FunctionName="skytexModel.Store.sp_WebAppLlenaPlaneacion">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="skytexModel.sp_WebAppLlenaPlaneacion_Result">
+                <ScalarProperty Name="Maquina" ColumnName="Maquina" />
+                <ScalarProperty Name="Batch" ColumnName="Batch" />
+                <ScalarProperty Name="Fecha_Inicio" ColumnName="Fecha_Inicio" />
+                <ScalarProperty Name="Fecha_Fin" ColumnName="Fecha_Fin" />
+                <ScalarProperty Name="Accion" ColumnName="Accion" />
+                <ScalarProperty Name="Opcion" ColumnName="Opcion" />
+                <ScalarProperty Name="Fecha_Insc" ColumnName="Fecha_Insc" />
+                <ScalarProperty Name="Nombre_Batch" ColumnName="Nombre_Batch" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Folio" ColumnName="Folio" />
+                <ScalarProperty Name="Documentos" ColumnName="Documentos" />
+                <ScalarProperty Name="efClave" ColumnName="efClave" />
+                <ScalarProperty Name="User_Clave" ColumnName="User_Clave" />
+                <ScalarProperty Name="Documento" ColumnName="Documento" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+                <ScalarProperty Name="Renglon" ColumnName="Renglon" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_AgendaListaEventos" FunctionName="skytexModel.Store.sp_AgendaListaEventos">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="skytexModel.sp_AgendaListaEventos_Result">
+                <ScalarProperty Name="fec_ini" ColumnName="fec_ini" />
+                <ScalarProperty Name="fec_fin" ColumnName="fec_fin" />
+                <ScalarProperty Name="fec_ins" ColumnName="fec_ins" />
+                <ScalarProperty Name="id_maquina" ColumnName="id_maquina" />
+                <ScalarProperty Name="id_batch" ColumnName="id_batch" />
+                <ScalarProperty Name="nom_bact" ColumnName="nom_bact" />
+                <ScalarProperty Name="status_proceso" ColumnName="status_proceso" />
+                <ScalarProperty Name="fol_dispo" ColumnName="fol_dispo" />
+                <ScalarProperty Name="doc_dispo" ColumnName="doc_dispo" />
+                <ScalarProperty Name="art_cve" ColumnName="art_cve" />
+                <ScalarProperty Name="ef_cve" ColumnName="ef_cve" />
+                <ScalarProperty Name="num_reng" ColumnName="num_reng" />
+                <ScalarProperty Name="reng" ColumnName="reng" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_WebAppActAgenda" FunctionName="skytexModel.Store.sp_WebAppActAgenda">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="skytexModel.sp_WebAppActAgenda_Result">
+                <ScalarProperty Name="fec_ini" ColumnName="fec_ini" />
+                <ScalarProperty Name="fec_fin" ColumnName="fec_fin" />
+                <ScalarProperty Name="fec_ins" ColumnName="fec_ins" />
+                <ScalarProperty Name="id_maquina" ColumnName="id_maquina" />
+                <ScalarProperty Name="id_batch" ColumnName="id_batch" />
+                <ScalarProperty Name="nom_bact" ColumnName="nom_bact" />
+                <ScalarProperty Name="status_proceso" ColumnName="status_proceso" />
+                <ScalarProperty Name="fol_dispo" ColumnName="fol_dispo" />
+                <ScalarProperty Name="doc_dispo" ColumnName="doc_dispo" />
+                <ScalarProperty Name="ef_cve" ColumnName="ef_cve" />
+                <ScalarProperty Name="accion" ColumnName="accion" />
+                <ScalarProperty Name="opcion" ColumnName="opcion" />
+                <ScalarProperty Name="user_cve" ColumnName="user_cve" />
+                <ScalarProperty Name="num_reng" ColumnName="num_reng" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

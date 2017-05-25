@@ -1,0 +1,10 @@
+C:\Users\ana.flores\Music\Prueba\Prueba.AccesoDatos\bin\Debug\Prueba.AccesoDatos.dll.config
+C:\Users\ana.flores\Music\Prueba\Prueba.AccesoDatos\bin\Debug\Prueba.AccesoDatos.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.AccesoDatos\bin\Debug\Prueba.AccesoDatos.pdb
+C:\Users\ana.flores\Music\Prueba\Prueba.AccesoDatos\bin\Debug\EntityFramework.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.AccesoDatos\bin\Debug\Prueba.Entidades.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.AccesoDatos\bin\Debug\Prueba.Entidades.pdb
+C:\Users\ana.flores\Music\Prueba\Prueba.AccesoDatos\bin\Debug\EntityFramework.xml
+C:\Users\ana.flores\Music\Prueba\Prueba.AccesoDatos\obj\Debug\AccesoDatos.csprojResolveAssemblyReference.cache
+C:\Users\ana.flores\Music\Prueba\Prueba.AccesoDatos\obj\Debug\Prueba.AccesoDatos.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.AccesoDatos\obj\Debug\Prueba.AccesoDatos.pdb
