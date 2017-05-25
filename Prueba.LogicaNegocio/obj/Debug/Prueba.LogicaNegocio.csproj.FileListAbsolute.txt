@@ -1,0 +1,11 @@
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.LogicaNegocio\obj\Debug\Prueba.LogicaNegocio.csprojResolveAssemblyReference.cache
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.LogicaNegocio\bin\Debug\Prueba.LogicaNegocio.dll
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.LogicaNegocio\bin\Debug\Prueba.LogicaNegocio.pdb
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.LogicaNegocio\bin\Debug\Prueba.AccesoDatos.dll
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.LogicaNegocio\bin\Debug\Prueba.Entidades.dll
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.LogicaNegocio\bin\Debug\EntityFramework.dll
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.LogicaNegocio\bin\Debug\Prueba.AccesoDatos.pdb
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.LogicaNegocio\bin\Debug\Prueba.Entidades.pdb
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.LogicaNegocio\bin\Debug\EntityFramework.xml
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.LogicaNegocio\obj\Debug\Prueba.LogicaNegocio.dll
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.LogicaNegocio\obj\Debug\Prueba.LogicaNegocio.pdb
