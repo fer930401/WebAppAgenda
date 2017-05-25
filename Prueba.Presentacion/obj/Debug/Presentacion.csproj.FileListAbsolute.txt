@@ -1,0 +1,15 @@
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.Presentacion.dll.config
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.Presentacion.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.Presentacion.pdb
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\DayPilot.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.Entidades.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.LogicaNegocio.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.AccesoDatos.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\EntityFramework.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.Entidades.pdb
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.LogicaNegocio.pdb
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.AccesoDatos.pdb
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\EntityFramework.xml
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.pdb

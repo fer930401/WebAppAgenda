@@ -1,0 +1,141 @@
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.Presentacion\bin\Prueba.Presentacion.dll.config
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.Presentacion\bin\Prueba.Presentacion.dll
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.Presentacion\bin\Prueba.Presentacion.pdb
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.Presentacion\bin\Prueba.Entidades.dll
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.Presentacion\bin\Prueba.LogicaNegocio.dll
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.Presentacion\bin\Prueba.AccesoDatos.dll
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.Presentacion\bin\EntityFramework.dll
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.Presentacion\bin\Prueba.Entidades.pdb
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.Presentacion\bin\Prueba.LogicaNegocio.pdb
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.Presentacion\bin\Prueba.AccesoDatos.pdb
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.Presentacion\bin\EntityFramework.xml
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.csprojResolveAssemblyReference.cache
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.dll
+c:\users\geovana.contreras\documents\visual studio 2013\Projects\Prueba\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.pdb
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.Presentacion.dll.config
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.Presentacion.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.Presentacion.pdb
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\DayPilot.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.Entidades.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.LogicaNegocio.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.AccesoDatos.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\EntityFramework.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.Entidades.pdb
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.LogicaNegocio.pdb
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\Prueba.AccesoDatos.pdb
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\bin\EntityFramework.xml
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.dll
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.pdb
+C:\Users\ana.flores\Music\Prueba\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\ana.flores\Music\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.dll.config
+C:\Users\ana.flores\Music\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.dll
+C:\Users\ana.flores\Music\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.pdb
+C:\Users\ana.flores\Music\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Entidades.dll
+C:\Users\ana.flores\Music\AplicacionWeb\Prueba.Presentacion\bin\Prueba.LogicaNegocio.dll
+C:\Users\ana.flores\Music\AplicacionWeb\Prueba.Presentacion\bin\Prueba.AccesoDatos.dll
+C:\Users\ana.flores\Music\AplicacionWeb\Prueba.Presentacion\bin\EntityFramework.dll
+C:\Users\ana.flores\Music\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Entidades.pdb
+C:\Users\ana.flores\Music\AplicacionWeb\Prueba.Presentacion\bin\Prueba.LogicaNegocio.pdb
+C:\Users\ana.flores\Music\AplicacionWeb\Prueba.Presentacion\bin\Prueba.AccesoDatos.pdb
+C:\Users\ana.flores\Music\AplicacionWeb\Prueba.Presentacion\bin\EntityFramework.xml
+C:\Users\ana.flores\Music\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\ana.flores\Music\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.dll
+C:\Users\ana.flores\Music\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.pdb
+C:\Users\ana.flores\Music\AplicacionWeb\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\ana.flores\Music\AplicacionWeb\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.dll.config
+C:\Users\ana.flores\Music\AplicacionWeb\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.dll
+C:\Users\ana.flores\Music\AplicacionWeb\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.pdb
+C:\Users\ana.flores\Music\AplicacionWeb\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Entidades.dll
+C:\Users\ana.flores\Music\AplicacionWeb\AplicacionWeb\Prueba.Presentacion\bin\Prueba.LogicaNegocio.dll
+C:\Users\ana.flores\Music\AplicacionWeb\AplicacionWeb\Prueba.Presentacion\bin\Prueba.AccesoDatos.dll
+C:\Users\ana.flores\Music\AplicacionWeb\AplicacionWeb\Prueba.Presentacion\bin\EntityFramework.dll
+C:\Users\ana.flores\Music\AplicacionWeb\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Entidades.pdb
+C:\Users\ana.flores\Music\AplicacionWeb\AplicacionWeb\Prueba.Presentacion\bin\Prueba.LogicaNegocio.pdb
+C:\Users\ana.flores\Music\AplicacionWeb\AplicacionWeb\Prueba.Presentacion\bin\Prueba.AccesoDatos.pdb
+C:\Users\ana.flores\Music\AplicacionWeb\AplicacionWeb\Prueba.Presentacion\bin\EntityFramework.xml
+C:\Users\ana.flores\Music\AplicacionWeb\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.dll
+C:\Users\ana.flores\Music\AplicacionWeb\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.pdb
+C:\Users\ana.flores\Music\AplicacionWeb2.0\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.dll.config
+C:\Users\ana.flores\Music\AplicacionWeb2.0\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.0\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.pdb
+C:\Users\ana.flores\Music\AplicacionWeb2.0\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Entidades.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.0\AplicacionWeb\Prueba.Presentacion\bin\Prueba.LogicaNegocio.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.0\AplicacionWeb\Prueba.Presentacion\bin\Prueba.AccesoDatos.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.0\AplicacionWeb\Prueba.Presentacion\bin\EntityFramework.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.0\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Entidades.pdb
+C:\Users\ana.flores\Music\AplicacionWeb2.0\AplicacionWeb\Prueba.Presentacion\bin\Prueba.LogicaNegocio.pdb
+C:\Users\ana.flores\Music\AplicacionWeb2.0\AplicacionWeb\Prueba.Presentacion\bin\Prueba.AccesoDatos.pdb
+C:\Users\ana.flores\Music\AplicacionWeb2.0\AplicacionWeb\Prueba.Presentacion\bin\EntityFramework.xml
+C:\Users\ana.flores\Music\AplicacionWeb2.0\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\ana.flores\Music\AplicacionWeb2.0\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.0\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.pdb
+C:\Users\ana.flores\Music\AplicacionWeb2.02\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.02\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.pdb
+C:\Users\ana.flores\Music\AplicacionWeb2.02\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Entidades.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.02\AplicacionWeb\Prueba.Presentacion\bin\Prueba.LogicaNegocio.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.02\AplicacionWeb\Prueba.Presentacion\bin\Prueba.AccesoDatos.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.02\AplicacionWeb\Prueba.Presentacion\bin\EntityFramework.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.02\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Entidades.pdb
+C:\Users\ana.flores\Music\AplicacionWeb2.02\AplicacionWeb\Prueba.Presentacion\bin\Prueba.LogicaNegocio.pdb
+C:\Users\ana.flores\Music\AplicacionWeb2.02\AplicacionWeb\Prueba.Presentacion\bin\Prueba.AccesoDatos.pdb
+C:\Users\ana.flores\Music\AplicacionWeb2.02\AplicacionWeb\Prueba.Presentacion\bin\EntityFramework.xml
+C:\Users\ana.flores\Music\AplicacionWeb2.02\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\ana.flores\Music\AplicacionWeb2.02\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.02\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.pdb
+C:\Users\ana.flores\Music\AplicacionWeb2.02\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.dll.config
+C:\Users\ana.flores\Music\AplicacionWeb2.0230\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.dll.config
+C:\Users\ana.flores\Music\AplicacionWeb2.0230\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.0230\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.pdb
+C:\Users\ana.flores\Music\AplicacionWeb2.0230\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Entidades.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.0230\AplicacionWeb\Prueba.Presentacion\bin\Prueba.LogicaNegocio.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.0230\AplicacionWeb\Prueba.Presentacion\bin\Prueba.AccesoDatos.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.0230\AplicacionWeb\Prueba.Presentacion\bin\EntityFramework.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.0230\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Entidades.pdb
+C:\Users\ana.flores\Music\AplicacionWeb2.0230\AplicacionWeb\Prueba.Presentacion\bin\Prueba.LogicaNegocio.pdb
+C:\Users\ana.flores\Music\AplicacionWeb2.0230\AplicacionWeb\Prueba.Presentacion\bin\Prueba.AccesoDatos.pdb
+C:\Users\ana.flores\Music\AplicacionWeb2.0230\AplicacionWeb\Prueba.Presentacion\bin\EntityFramework.xml
+C:\Users\ana.flores\Music\AplicacionWeb2.0230\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\ana.flores\Music\AplicacionWeb2.0230\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.dll
+C:\Users\ana.flores\Music\AplicacionWeb2.0230\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.pdb
+C:\Users\fernando.garcia\Desktop\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.dll.config
+C:\Users\fernando.garcia\Desktop\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.dll
+C:\Users\fernando.garcia\Desktop\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.pdb
+C:\Users\fernando.garcia\Desktop\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Entidades.dll
+C:\Users\fernando.garcia\Desktop\AplicacionWeb\Prueba.Presentacion\bin\Prueba.LogicaNegocio.dll
+C:\Users\fernando.garcia\Desktop\AplicacionWeb\Prueba.Presentacion\bin\Prueba.AccesoDatos.dll
+C:\Users\fernando.garcia\Desktop\AplicacionWeb\Prueba.Presentacion\bin\EntityFramework.dll
+C:\Users\fernando.garcia\Desktop\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Entidades.pdb
+C:\Users\fernando.garcia\Desktop\AplicacionWeb\Prueba.Presentacion\bin\Prueba.LogicaNegocio.pdb
+C:\Users\fernando.garcia\Desktop\AplicacionWeb\Prueba.Presentacion\bin\Prueba.AccesoDatos.pdb
+C:\Users\fernando.garcia\Desktop\AplicacionWeb\Prueba.Presentacion\bin\EntityFramework.xml
+C:\Users\fernando.garcia\Desktop\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\fernando.garcia\Desktop\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.dll
+C:\Users\fernando.garcia\Desktop\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.pdb
+\\fsa\Admvo\Proyectos web skytex\Fernando\AplicacionWeb.sinVista\Prueba.Presentacion\bin\Prueba.Presentacion.dll.config
+\\fsa\Admvo\Proyectos web skytex\Fernando\AplicacionWeb.sinVista\Prueba.Presentacion\bin\Prueba.Presentacion.dll
+\\fsa\Admvo\Proyectos web skytex\Fernando\AplicacionWeb.sinVista\Prueba.Presentacion\bin\Prueba.Presentacion.pdb
+\\fsa\Admvo\Proyectos web skytex\Fernando\AplicacionWeb.sinVista\Prueba.Presentacion\bin\Prueba.Entidades.dll
+\\fsa\Admvo\Proyectos web skytex\Fernando\AplicacionWeb.sinVista\Prueba.Presentacion\bin\Prueba.LogicaNegocio.dll
+\\fsa\Admvo\Proyectos web skytex\Fernando\AplicacionWeb.sinVista\Prueba.Presentacion\bin\Prueba.AccesoDatos.dll
+\\fsa\Admvo\Proyectos web skytex\Fernando\AplicacionWeb.sinVista\Prueba.Presentacion\bin\EntityFramework.dll
+\\fsa\Admvo\Proyectos web skytex\Fernando\AplicacionWeb.sinVista\Prueba.Presentacion\bin\Prueba.Entidades.pdb
+\\fsa\Admvo\Proyectos web skytex\Fernando\AplicacionWeb.sinVista\Prueba.Presentacion\bin\Prueba.LogicaNegocio.pdb
+\\fsa\Admvo\Proyectos web skytex\Fernando\AplicacionWeb.sinVista\Prueba.Presentacion\bin\Prueba.AccesoDatos.pdb
+\\fsa\Admvo\Proyectos web skytex\Fernando\AplicacionWeb.sinVista\Prueba.Presentacion\bin\EntityFramework.xml
+\\fsa\Admvo\Proyectos web skytex\Fernando\AplicacionWeb.sinVista\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.csprojResolveAssemblyReference.cache
+\\fsa\Admvo\Proyectos web skytex\Fernando\AplicacionWeb.sinVista\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.dll
+\\fsa\Admvo\Proyectos web skytex\Fernando\AplicacionWeb.sinVista\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.pdb
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.dll.config
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.dll
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Presentacion.pdb
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Entidades.dll
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Presentacion\bin\Prueba.LogicaNegocio.dll
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Presentacion\bin\Prueba.AccesoDatos.dll
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Presentacion\bin\EntityFramework.dll
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Presentacion\bin\Prueba.Entidades.pdb
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Presentacion\bin\Prueba.LogicaNegocio.pdb
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Presentacion\bin\Prueba.AccesoDatos.pdb
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Presentacion\bin\EntityFramework.xml
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.dll
+C:\Users\fernando.garcia\Documents\AplicacionWeb\Prueba.Presentacion\obj\Debug\Prueba.Presentacion.pdb

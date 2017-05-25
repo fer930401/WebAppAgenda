@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Agenda.master.cs" Inherits="Aplicacion_Web.Agenda"  Debug="false" EnableViewState="false" ViewStateMode="Disabled"%>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head2" runat="server">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Agenda - Skytex México</title>
+    <!-- asignacion de icono de barra de navegador -->
+    <link rel="shortcut icon" href="<%=ResolveUrl("~/Media/Imagenes/skytex.ico") %>" />
+    <!-- cargar de archivos de estilos -->
+    <!-- estilo de controles de la aplicacion -->
+    <link type="text/css" rel="stylesheet" href="<%=ResolveUrl("Content/bootstrap.css")%>" />
+    <!-- estilo de ventanas de notificacion emergentes -->
+    <link type="text/css" rel="stylesheet" href="<%=ResolveUrl("Content/alertify.core.css")%>" />
+    <link type="text/css" rel="stylesheet" href="<%=ResolveUrl("Content/alertify.default.css")%>" />
+    <!-- estilo para el grud de daypilot -->
+    <link type="text/css" rel="stylesheet" href="<%=ResolveUrl("Content/sezer.css")%>" />
+    <!-- estilo para el calendario a la izquierda del grid de daypilot -->
+    <link type="text/css" rel="stylesheet" href="<%=ResolveUrl("Content/navigator.css")%>" />
+    <!-- carga de archivos JS -->
+    <script type="text/javascript" src="<%= ResolveClientUrl("Scripts/modal.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveUrl("bin/DayPilot/common.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveUrl("Scripts/jquery-1.9.1.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveUrl("Scripts/bootstrap.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveUrl("bin/DayPilot/calendar.js") %>"></script>    
+    <script type="text/javascript" src="<%= ResolveClientUrl("Scripts/jquery-1.9.1.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl("crystalreportviewers13/js/crviewer/crv.js")%>" ></script>
+
+    <link type="text/css" rel="stylesheet" href="<%=ResolveUrl("Content/jAlert-v3.css")%>" />
+    <!--<script type="text/javascript" src="<%= ResolveClientUrl("Content/jAlert-v3.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl("Content/jAlert-functions.js") %>"></script>-->
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="Media/Imagenes/logoSkytexB.png" width="17" height="15"/>
+                  </a>
+                </div>
+                  <%
+                      var loc = HttpContext.Current.Request.Url.AbsolutePath;
+                      var activo = "";
+                      var activo2 = "";
+                      if(loc == "/Agenda.aspx"){
+                         activo = "class='active'";
+                      }
+                      else if (loc != "/Agenda.aspx")
+                      {
+                          activo2 = "active";
+                      }
+                  %>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li <%= activo %>><a href="Agenda.aspx"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Inicio <span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown <%= activo2 %>">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reportes <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="ReporteOrdenes.aspx" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Reporte Ordenes </a></li>
+                        <!--<li><a href="reporteEntregadas.aspx"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Reporte Ordenes Entregada </a></li>
+                        <li><a href="reporteBodega.aspx"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Reporte Ordenes En Bodega </a></li>
+                        <li><a href="reporteVencidas.aspx"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> Reporte Ordenes Vencidas</a></li>-->
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        </div>
+    </nav>
+    <!--<div class="">
+        <div class="">
+            <div class="">
+                <div class="">
+                    <h4>Agenda <small>Skytex México S.A de C.V.</small></h4>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <form id="form2" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">                        
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    
+</body>
+</html>
