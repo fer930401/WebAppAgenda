@@ -103,13 +103,11 @@
         }
         function afterRender(isCallBack) {
             dpn.visibleRangeChangedCallBack();
-//nueva linea
         }
     </script>
     
     <script>
         $(document).ready(function () {
-
             $(document).bind("contextmenu", function (e) {
                 $("#menu").css({ 'display': 'block', 'left': e.pageX, 'top': e.pageY });
                 return false;
@@ -124,7 +122,6 @@
                   <img src="Media/Imagenes/skytex.png" width="200" height="70" />
                   
                   <div class="col-md-offset-2">
-                      <!-- configuracion del calendario a la izquierda del grid de daypilot -->
                       <DayPilot:DayPilotNavigator ID="DayPilotNavigator1" runat="server" 
                         ClientObjectName ="dpn"
                         ShowMonths="2"
