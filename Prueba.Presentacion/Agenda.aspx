@@ -102,7 +102,7 @@
             modal.showUrl("nuevaFecha.aspx?id=" + e.id());
         }
         function afterRender(isCallBack) {
-            dpn.visibleRangeChangedCallBack(); // update free/busy after adding/changing/deleting events in the calendar
+            dpn.visibleRangeChangedCallBack();
         }
     </script>
     
