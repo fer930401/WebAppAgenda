@@ -27,14 +27,10 @@ namespace Prueba.Presentacion
             {
                 session.appAbierta();
                 //llenaAgenda();
-                //Prueba.Entidades.sp_WebAppLlenaLista_Result lista = logicaNegocio.obtListaPendientes2();
-                //Response.Redirect("~/Agenda.aspx");
             }
             else if (session.estaEnUso2() == 0)
             {
                 session.appAbierta2();
-                //Prueba.Entidades.sp_WebAppLlenaLista_Result lista = logicaNegocio.obtListaPendientes2();
-                //Response.Redirect("~/Agenda.aspx");
             }
             else
             {
