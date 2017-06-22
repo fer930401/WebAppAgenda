@@ -10,7 +10,7 @@ namespace Prueba.Presentacion
     {
         //const string usoApp = @"C:\Users\fernando.garcia\Documents\Proyectos Skytex\AplicacionWeb\Prueba.Presentacion\Activo\Activo.txt";
         //const string usoApp = @"C:\Desarrollo\Desarrollo_web\AppsPrueba\Agenda\Activo\Activo.txt";
-        const string usoApp = @"C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Activo\Activo.txt";
+        const string usoApp = @"C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.Presentacion\Activo\Activo.txt";
         const string sessionvar = "checkCounter";
 
         public session()

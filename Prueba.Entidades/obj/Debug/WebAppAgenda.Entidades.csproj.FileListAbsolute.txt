@@ -1,0 +1,8 @@
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.Entidades\bin\Debug\Prueba.Entidades.dll.config
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.Entidades\bin\Debug\Prueba.Entidades.dll
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.Entidades\bin\Debug\Prueba.Entidades.pdb
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.Entidades\bin\Debug\EntityFramework.dll
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.Entidades\bin\Debug\EntityFramework.xml
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.Entidades\obj\Debug\WebAppAgenda.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.Entidades\obj\Debug\Prueba.Entidades.dll
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.Entidades\obj\Debug\Prueba.Entidades.pdb

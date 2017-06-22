@@ -1,0 +1,11 @@
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.AccesoDatos\bin\Debug\Prueba.AccesoDatos.dll.config
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.AccesoDatos\bin\Debug\Prueba.AccesoDatos.dll
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.AccesoDatos\bin\Debug\Prueba.AccesoDatos.pdb
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.AccesoDatos\bin\Debug\EntityFramework.dll
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.AccesoDatos\bin\Debug\Prueba.Entidades.dll
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.AccesoDatos\bin\Debug\Prueba.Entidades.pdb
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.AccesoDatos\bin\Debug\EntityFramework.xml
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.AccesoDatos\obj\Debug\WebAppAgenda.AccesoDatos.csprojResolveAssemblyReference.cache
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.AccesoDatos\obj\Debug\WebAppAgenda.AccesoDatos.csproj.ResolveComReference.cache
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.AccesoDatos\obj\Debug\Prueba.AccesoDatos.dll
+C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.AccesoDatos\obj\Debug\Prueba.AccesoDatos.pdb

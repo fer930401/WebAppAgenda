@@ -22,7 +22,7 @@ namespace Prueba.Presentacion
             //rep.DataSourceConnections[0].SetLogon("soludin_develop", "dinamico20");
             //rep.SetDatabaseLogon("soludin_develop", "dinamico20", "SQL", "skytex", false);
             rep.Refresh();
-            rep.SetDatabaseLogon("soludin_develop", "dinamico20", "skyhdev3", "develop", false);
+            rep.SetDatabaseLogon("soludin_develop", "dinamico20", "SQL", "skytex", false);
             //rep.ExportToDisk(ExportFormatType.PortableDocFormat, Server.MapPath("Activo/ReportName.pdf"));
 
             ExportOptions CrExportOptions;
@@ -47,14 +47,14 @@ namespace Prueba.Presentacion
             //rep2.DataSourceConnections[0].SetLogon("soludin_develop", "dinamico20");
             //rep2.SetDatabaseLogon("soludin_develop", "dinamico20", "SQL", "skytex", false);
             rep2.Refresh();
-            rep2.SetDatabaseLogon("soludin_develop", "dinamico20", "skyhdev3", "develop", false);
+            rep2.SetDatabaseLogon("soludin_develop", "dinamico20", "SQL", "skytex", false);
             ExportOptions CrExportOptions2;
             DiskFileDestinationOptions CrDiskFileDestinationOptions2 = new DiskFileDestinationOptions();
             ExcelFormatOptions CrFormatTypeOptions2 = new ExcelFormatOptions();
             //CrDiskFileDestinationOptions2.DiskFileName = @"c:\Users\fernando.garcia\Documents\Proyectos Skytex\AplicacionWeb\Prueba.Presentacion\Activo\Reporte Ordenes.xls";
             //CrDiskFileDestinationOptions2.DiskFileName = @"C:\Desarrollo\Desarrollo_web\Agenda\Activo\Reporte Ordenes.xls";
             //CrDiskFileDestinationOptions2.DiskFileName = @"C:\Desarrollo\Desarrollo_web\AppsPrueba\Agenda\Activo\Reporte Ordenes.xls";
-            CrDiskFileDestinationOptions2.DiskFileName = @"C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Activo\Reporte Ordenes.xls";
+            CrDiskFileDestinationOptions2.DiskFileName = @"C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.Presentacion\Activo\Reporte Ordenes.xls";
             CrExportOptions2 = rep2.ExportOptions;
             {
                 CrExportOptions2.ExportDestinationType = ExportDestinationType.DiskFile;
@@ -127,7 +127,7 @@ namespace Prueba.Presentacion
             System.Net.Mail.Attachment attachment;
             //attachment = new System.Net.Mail.Attachment(@"c:\Users\fernando.garcia\Documents\Proyectos Skytex\AplicacionWeb\Prueba.Presentacion\Activo\Reporte Ordenes.xls");
             //attachment = new System.Net.Mail.Attachment(@"C:\Desarrollo\Desarrollo_web\AppsPrueba\Agenda\Activo\Reporte Ordenes.xls");
-            attachment = new System.Net.Mail.Attachment(@"C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Activo\Reporte Ordenes.xls");
+            attachment = new System.Net.Mail.Attachment(@"C:\Users\fernando.garcia\Documents\Repositorios\WebAppAgenda\Prueba.Presentacion\Activo\Reporte Ordenes.xls");
             //attachment = new System.Net.Mail.Attachment(@"C:\Desarrollo\Desarrollo_web\Agenda\Activo\Reporte Ordenes.xls");
             mail.Attachments.Add(attachment);
 

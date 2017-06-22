@@ -30,6 +30,7 @@
     <EntitySetMapping Name="xtPlaneacion">
       <EntityTypeMapping TypeName="skytexModel.xtPlaneacion">
         <MappingFragment StoreEntitySet="xtPlaneacion">
+          <ScalarProperty Name="num_reng" ColumnName="num_reng" />
           <ScalarProperty Name="user_cve" ColumnName="user_cve" />
           <ScalarProperty Name="opcion" ColumnName="opcion" />
           <ScalarProperty Name="accion" ColumnName="accion" />
@@ -46,17 +47,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <FunctionImportMapping FunctionImportName="sp_AgendaListaEventos" FunctionName="skytexModel.Store.sp_AgendaListaEventos">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="skytexModel.sp_AgendaListaEventos_Result">
-          <ScalarProperty Name="id_batch" ColumnName="id_batch" />
-          <ScalarProperty Name="nom_bact" ColumnName="nom_bact" />
-          <ScalarProperty Name="fec_ini" ColumnName="fec_ini" />
-          <ScalarProperty Name="fec_fin" ColumnName="fec_fin" />
-          <ScalarProperty Name="id_maquina" ColumnName="id_maquina" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="Eventos" FunctionName="skytexModel.Store.Eventos">
       <ResultMapping>
         <ComplexTypeMapping TypeName="skytexModel.Eventos_Result">
@@ -66,44 +56,56 @@
       </ResultMapping>
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="sp_WebAppAgenActInfo" FunctionName="skytexModel.Store.sp_WebAppAgenActInfo" />
-    <FunctionImportMapping FunctionImportName="sp_WebAppAgMuestaEv1" FunctionName="skytexModel.Store.sp_WebAppAgMuestaEv">
+    <EntitySetMapping Name="xcTmpAgens">
+      <EntityTypeMapping TypeName="skytexModel.xcTmpAgen">
+        <MappingFragment StoreEntitySet="xcTmpAgen">
+          <ScalarProperty Name="reng" ColumnName="reng" />
+          <ScalarProperty Name="num_reng" ColumnName="num_reng" />
+          <ScalarProperty Name="calculo" ColumnName="calculo" />
+          <ScalarProperty Name="precio_vta" ColumnName="precio_vta" />
+          <ScalarProperty Name="uni_med" ColumnName="uni_med" />
+          <ScalarProperty Name="uns_vta" ColumnName="uns_vta" />
+          <ScalarProperty Name="status_entrega" ColumnName="status_entrega" />
+          <ScalarProperty Name="status_orden" ColumnName="status_orden" />
+          <ScalarProperty Name="fec_mov_ttant" ColumnName="fec_mov_ttant" />
+          <ScalarProperty Name="art_cve" ColumnName="art_cve" />
+          <ScalarProperty Name="articulos" ColumnName="articulos" />
+          <ScalarProperty Name="num_fol" ColumnName="num_fol" />
+          <ScalarProperty Name="tipo_doc" ColumnName="tipo_doc" />
+          <ScalarProperty Name="ef_cve" ColumnName="ef_cve" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_WebAppLlenaLista" FunctionName="skytexModel.Store.sp_WebAppLlenaLista">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="skytexModel.sp_WebAppLlenaLista_Result">
+          <ScalarProperty Name="ef_cve" ColumnName="ef_cve" />
+          <ScalarProperty Name="tipo_doc" ColumnName="tipo_doc" />
+          <ScalarProperty Name="num_fol" ColumnName="num_fol" />
+          <ScalarProperty Name="articulos" ColumnName="articulos" />
+          <ScalarProperty Name="art_cve" ColumnName="art_cve" />
+          <ScalarProperty Name="fec_mov_ttant" ColumnName="fec_mov_ttant" />
+          <ScalarProperty Name="status_orden" ColumnName="status_orden" />
+          <ScalarProperty Name="status_entrega" ColumnName="status_entrega" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_llenaAgenda" FunctionName="skytexModel.Store.sp_llenaAgenda" />
+    <FunctionImportMapping FunctionImportName="sp_WebAppAgMuestaEv1" FunctionName="skytexModel.Store.sp_WebAppAgMuestaEv1">
       <ResultMapping>
         <ComplexTypeMapping TypeName="skytexModel.sp_WebAppAgMuestaEv1_Result">
-          <ScalarProperty Name="id_batch" ColumnName="id_batch" />
-          <ScalarProperty Name="nom_bact" ColumnName="nom_bact" />
-          <ScalarProperty Name="fec_ini" ColumnName="fec_ini" />
-          <ScalarProperty Name="fec_fin" ColumnName="fec_fin" />
-          <ScalarProperty Name="id_maquina" ColumnName="id_maquina" />
-          <ScalarProperty Name="color" ColumnName="color" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="sp_WebAppActAgenda" FunctionName="skytexModel.Store.sp_WebAppActAgenda">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="skytexModel.sp_WebAppActAgenda_Result">
-          <ScalarProperty Name="error" ColumnName="error" />
-          <ScalarProperty Name="mensaje" ColumnName="mensaje" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="sp_WebAppLlenaPlaneacion" FunctionName="skytexModel.Store.sp_WebAppLlenaPlaneacion">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="skytexModel.sp_WebAppLlenaPlaneacion_Result">
-          <ScalarProperty Name="Fecha_Inicio" ColumnName="Fecha_Inicio" />
-          <ScalarProperty Name="Fecha_Fin" ColumnName="Fecha_Fin" />
-          <ScalarProperty Name="Fecha_Insc" ColumnName="Fecha_Insc" />
-          <ScalarProperty Name="Maquina" ColumnName="Maquina" />
-          <ScalarProperty Name="Batch" ColumnName="Batch" />
-          <ScalarProperty Name="Nombre_Batch" ColumnName="Nombre_Batch" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
-          <ScalarProperty Name="Folio" ColumnName="Folio" />
-          <ScalarProperty Name="Documentos" ColumnName="Documentos" />
-          <ScalarProperty Name="efClave" ColumnName="efClave" />
-          <ScalarProperty Name="Accion" ColumnName="Accion" />
-          <ScalarProperty Name="Opcion" ColumnName="Opcion" />
-          <ScalarProperty Name="User_Clave" ColumnName="User_Clave" />
-          <ScalarProperty Name="Documento" ColumnName="Documento" />
-          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="num_fol" ColumnName="num_fol" />
+          <ScalarProperty Name="ef_cve" ColumnName="ef_cve" />
+          <ScalarProperty Name="tipo_doc" ColumnName="tipo_doc" />
+          <ScalarProperty Name="articulos" ColumnName="articulos" />
+          <ScalarProperty Name="status_entrega" ColumnName="status_entrega" />
+          <ScalarProperty Name="fec_mov_ttant" ColumnName="fec_mov_ttant" />
+          <ScalarProperty Name="art_cve" ColumnName="art_cve" />
+          <ScalarProperty Name="status_orden" ColumnName="status_orden" />
+          <ScalarProperty Name="uns_vta" ColumnName="uns_vta" />
+          <ScalarProperty Name="uni_med" ColumnName="uni_med" />
+          <ScalarProperty Name="calculo" ColumnName="calculo" />
+          <ScalarProperty Name="reng" ColumnName="reng" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
@@ -115,12 +117,64 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="sp_WebAppLlenaLista" FunctionName="skytexModel.Store.sp_WebAppLlenaLista">
+    <FunctionImportMapping FunctionImportName="sp_WebAppLlenaPlaneacion" FunctionName="skytexModel.Store.sp_WebAppLlenaPlaneacion">
       <ResultMapping>
-        <ComplexTypeMapping TypeName="skytexModel.sp_WebAppLlenaLista_Result">
-          <ScalarProperty Name="num_fol" ColumnName="num_fol" />
-          <ScalarProperty Name="Articulos" ColumnName="Articulos" />
-          <ScalarProperty Name="uni_med" ColumnName="uni_med" />
+        <ComplexTypeMapping TypeName="skytexModel.sp_WebAppLlenaPlaneacion_Result">
+          <ScalarProperty Name="Maquina" ColumnName="Maquina" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+          <ScalarProperty Name="Fecha_Inicio" ColumnName="Fecha_Inicio" />
+          <ScalarProperty Name="Fecha_Fin" ColumnName="Fecha_Fin" />
+          <ScalarProperty Name="Accion" ColumnName="Accion" />
+          <ScalarProperty Name="Opcion" ColumnName="Opcion" />
+          <ScalarProperty Name="Fecha_Insc" ColumnName="Fecha_Insc" />
+          <ScalarProperty Name="Nombre_Batch" ColumnName="Nombre_Batch" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Folio" ColumnName="Folio" />
+          <ScalarProperty Name="Documentos" ColumnName="Documentos" />
+          <ScalarProperty Name="efClave" ColumnName="efClave" />
+          <ScalarProperty Name="User_Clave" ColumnName="User_Clave" />
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Renglon" ColumnName="Renglon" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_AgendaListaEventos" FunctionName="skytexModel.Store.sp_AgendaListaEventos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="skytexModel.sp_AgendaListaEventos_Result">
+          <ScalarProperty Name="fec_ini" ColumnName="fec_ini" />
+          <ScalarProperty Name="fec_fin" ColumnName="fec_fin" />
+          <ScalarProperty Name="fec_ins" ColumnName="fec_ins" />
+          <ScalarProperty Name="id_maquina" ColumnName="id_maquina" />
+          <ScalarProperty Name="id_batch" ColumnName="id_batch" />
+          <ScalarProperty Name="nom_bact" ColumnName="nom_bact" />
+          <ScalarProperty Name="status_proceso" ColumnName="status_proceso" />
+          <ScalarProperty Name="fol_dispo" ColumnName="fol_dispo" />
+          <ScalarProperty Name="doc_dispo" ColumnName="doc_dispo" />
+          <ScalarProperty Name="art_cve" ColumnName="art_cve" />
+          <ScalarProperty Name="ef_cve" ColumnName="ef_cve" />
+          <ScalarProperty Name="num_reng" ColumnName="num_reng" />
+          <ScalarProperty Name="reng" ColumnName="reng" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_WebAppActAgenda" FunctionName="skytexModel.Store.sp_WebAppActAgenda">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="skytexModel.sp_WebAppActAgenda_Result">
+          <ScalarProperty Name="fec_ini" ColumnName="fec_ini" />
+          <ScalarProperty Name="fec_fin" ColumnName="fec_fin" />
+          <ScalarProperty Name="fec_ins" ColumnName="fec_ins" />
+          <ScalarProperty Name="id_maquina" ColumnName="id_maquina" />
+          <ScalarProperty Name="id_batch" ColumnName="id_batch" />
+          <ScalarProperty Name="nom_bact" ColumnName="nom_bact" />
+          <ScalarProperty Name="status_proceso" ColumnName="status_proceso" />
+          <ScalarProperty Name="fol_dispo" ColumnName="fol_dispo" />
+          <ScalarProperty Name="doc_dispo" ColumnName="doc_dispo" />
+          <ScalarProperty Name="ef_cve" ColumnName="ef_cve" />
+          <ScalarProperty Name="accion" ColumnName="accion" />
+          <ScalarProperty Name="opcion" ColumnName="opcion" />
+          <ScalarProperty Name="user_cve" ColumnName="user_cve" />
+          <ScalarProperty Name="num_reng" ColumnName="num_reng" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>

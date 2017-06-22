@@ -28,6 +28,29 @@
     <Property Name="prm15" Type="money" />
     <Property Name="prm16" Type="nchar" MaxLength="6" />
   </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'skytex.dbo.xcTmpAgen' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="xcTmpAgen">
+    <Key>
+      <PropertyRef Name="num_fol" />
+    </Key>
+    <Property Name="ef_cve" Type="nchar" MaxLength="3" />
+    <Property Name="tipo_doc" Type="nchar" MaxLength="6" />
+    <Property Name="num_fol" Type="int" Nullable="false" />
+    <Property Name="articulos" Type="nvarchar" MaxLength="255" />
+    <Property Name="art_cve" Type="nvarchar" MaxLength="13" />
+    <Property Name="fec_mov_ttant" Type="datetime" />
+    <Property Name="status_orden" Type="smallint" />
+    <Property Name="status_entrega" Type="nvarchar" MaxLength="255" />
+    <Property Name="uns_vta" Type="float" />
+    <Property Name="uni_med" Type="nvarchar" MaxLength="255" />
+    <Property Name="precio_vta" Type="float" />
+    <Property Name="calculo" Type="nvarchar" MaxLength="255" />
+    <Property Name="num_reng" Type="nvarchar" MaxLength="50" />
+    <Property Name="reng" Type="nvarchar" MaxLength="3" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'skytex.dbo.xtPlaneacion' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="xtPlaneacion">
     <Key>
       <PropertyRef Name="fec_ini" />
@@ -50,6 +73,7 @@
     <Property Name="accion" Type="nvarchar" MaxLength="20" Nullable="false" />
     <Property Name="opcion" Type="nvarchar" MaxLength="20" Nullable="false" />
     <Property Name="user_cve" Type="nchar" MaxLength="3" />
+    <Property Name="num_reng" Type="smallint" />
   </EntityType>
   <Function Name="Eventos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="ef_cve" Type="nchar" Mode="In" />
@@ -57,21 +81,15 @@
     <Parameter Name="status_proceso" Type="nchar" Mode="In" />
   </Function>
   <Function Name="sp_AgendaListaEventos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="ef_cve" Type="varchar" Mode="In" />
-    <Parameter Name="tipdoc_cve" Type="varchar" Mode="In" />
-    <Parameter Name="status_proceso" Type="varchar" Mode="In" />
+    <Parameter Name="ef_cve" Type="nchar" Mode="In" />
+    <Parameter Name="tipdoc_cve" Type="nchar" Mode="In" />
+    <Parameter Name="status_proceso" Type="nchar" Mode="In" />
   </Function>
+  <Function Name="sp_llenaAgenda" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="sp_WebAppActAgenda" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="ef_cve" Type="nchar" Mode="In" />
-    <Parameter Name="fec_ini" Type="datetime" Mode="In" />
-    <Parameter Name="fec_fin" Type="datetime" Mode="In" />
-    <Parameter Name="id_maq" Type="nvarchar" Mode="In" />
-    <Parameter Name="id_bacth" Type="nvarchar" Mode="In" />
-    <Parameter Name="nom_batch" Type="nvarchar" Mode="In" />
     <Parameter Name="doc_generar" Type="nchar" Mode="In" />
-    <Parameter Name="accion" Type="nvarchar" Mode="In" />
     <Parameter Name="opcion" Type="nvarchar" Mode="In" />
-    <Parameter Name="user_cve" Type="nchar" Mode="In" />
   </Function>
   <Function Name="sp_WebAppAgenActInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="ef_cve" Type="nchar" Mode="In" />
@@ -85,12 +103,7 @@
     <Parameter Name="opcion" Type="nvarchar" Mode="In" />
     <Parameter Name="user_cve" Type="nchar" Mode="In" />
   </Function>
-  <Function Name="sp_WebAppAgMuestaEv" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="ef_cve" Type="nchar" Mode="In" />
-    <Parameter Name="tipdoc_cve" Type="nchar" Mode="In" />
-    <Parameter Name="status" Type="nchar" Mode="In" />
-    <Parameter Name="extra" Type="nchar" Mode="In" />
-  </Function>
+  <Function Name="sp_WebAppAgMuestaEv1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="sp_WebAppInsInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="ef_cve" Type="nchar" Mode="In" />
     <Parameter Name="fec_ini" Type="datetime" Mode="In" />
@@ -112,6 +125,41 @@
   </Function>
   <EntityContainer Name="skytexModelStoreContainer">
     <EntitySet Name="xcdconapl_cl" EntityType="Self.xcdconapl_cl" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="xtPlaneacion" EntityType="Self.xtPlaneacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcTmpAgen" EntityType="Self.xcTmpAgen" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[xcTmpAgen].[ef_cve] AS [ef_cve], 
+[xcTmpAgen].[tipo_doc] AS [tipo_doc], 
+[xcTmpAgen].[num_fol] AS [num_fol], 
+[xcTmpAgen].[articulos] AS [articulos], 
+[xcTmpAgen].[art_cve] AS [art_cve], 
+[xcTmpAgen].[fec_mov_ttant] AS [fec_mov_ttant], 
+[xcTmpAgen].[status_orden] AS [status_orden], 
+[xcTmpAgen].[status_entrega] AS [status_entrega], 
+[xcTmpAgen].[uns_vta] AS [uns_vta], 
+[xcTmpAgen].[uni_med] AS [uni_med], 
+[xcTmpAgen].[precio_vta] AS [precio_vta], 
+[xcTmpAgen].[calculo] AS [calculo], 
+[xcTmpAgen].[num_reng] AS [num_reng], 
+[xcTmpAgen].[reng] AS [reng]
+FROM [dbo].[xcTmpAgen] AS [xcTmpAgen]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="xtPlaneacion" EntityType="Self.xtPlaneacion" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[xtPlaneacion].[fec_ini] AS [fec_ini], 
+[xtPlaneacion].[fec_fin] AS [fec_fin], 
+[xtPlaneacion].[fec_ins] AS [fec_ins], 
+[xtPlaneacion].[id_maquina] AS [id_maquina], 
+[xtPlaneacion].[id_batch] AS [id_batch], 
+[xtPlaneacion].[nom_bact] AS [nom_bact], 
+[xtPlaneacion].[status_proceso] AS [status_proceso], 
+[xtPlaneacion].[fol_dispo] AS [fol_dispo], 
+[xtPlaneacion].[doc_dispo] AS [doc_dispo], 
+[xtPlaneacion].[ef_cve] AS [ef_cve], 
+[xtPlaneacion].[accion] AS [accion], 
+[xtPlaneacion].[opcion] AS [opcion], 
+[xtPlaneacion].[user_cve] AS [user_cve], 
+[xtPlaneacion].[num_reng] AS [num_reng]
+FROM [dbo].[xtPlaneacion] AS [xtPlaneacion]</DefiningQuery>
+    </EntitySet>
   </EntityContainer>
 </Schema>

@@ -198,7 +198,7 @@
         <br />
         <div id="external">
             <div class="row">
-              <!-- listado de ordenes Por Entregar -->                
+              <!-- listado de ordenes Por Entregar Qaroc_xrec -->                
               <div class="col-md-6">
                   <div class="alert alert-info" role="alert">
                     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
@@ -215,7 +215,7 @@
                     </asp:Repeater>
                  </ul>
               </div>
-              <!-- listado de ordenes en bodega Skytex -->
+              <!-- listado de ordenes en bodega Skytex Qexix_101A-->
               <div class="col-md-6">
                   <div class="alert alert-info" role="alert">
                     <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
